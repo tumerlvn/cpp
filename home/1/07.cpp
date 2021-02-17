@@ -63,7 +63,7 @@ int Vector::cross(const Vector &tmp) {
 }
 
 bool Vector::isCollinear(const Vector &tmp) {
-    return (this->x / tmp.x == this->y / tmp.y);
+    return !(this->x * tmp.y - this->y * tmp.x);
 }
 
 int main() {
